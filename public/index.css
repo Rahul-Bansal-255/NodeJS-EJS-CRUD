@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5vw;
+}
+
+.nav a {
+  display: inline-block;
+  font-size: 3vw;
+  text-decoration: none;
+  color: black;
+  padding: 3vw;
+  border-radius: 2vw;
+}
+
+.nav a:hover {
+  background-color: grey;
+}
+
+.user-list-item {
+  padding: 2vw;
+  margin: 1vw;
+  border: 0.5vw solid grey;
+  border-radius: 2vw;
+}
+
+.user-list-item a {
+  font-size: 2.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+.user-list-item p {
+  font-size: 2.5vw;
+}
+
+.no-user {
+  display: inline-block;
+  padding: 2vw;
+  margin: 1vw;
+  border: 0.2vw solid grey;
+  border-radius: 2vw;
+  font-size: 2.5vw;
+}
+
+.add-user-form {
+  padding: 2vw;
+  margin: 1vw;
+  border: 0.5vw solid grey;
+  border-radius: 2vw;
+}
+
+.add-user-form div {
+  margin: 3vw;
+}
+
+.add-user-form label {
+  margin-right: 2vw;
+  font-size: 2.5vw;
+}
+
+.add-user-form input {
+  font-size: 2.5vw;
+}
+
+.add-user-form button {
+  font-size: 2.5vw;
+  padding: 1vw;
+  margin-left: 30vw;
+}
+
+.btn-del {
+  font-size: 2.5vw;
+  padding: 1vw;
+  margin-left: 30vw;
+}

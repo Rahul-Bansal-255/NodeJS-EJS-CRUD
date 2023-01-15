@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+      <% if(users[0]) { %>
+        <div class="user-list">
+          <% users.forEach(i=> { %>
+            <div class="user-list-item">
+              <a class="name" href="/user/<%= i.id %>">
+                Name : <%= i.name %>
+              </a>
+              <p class="college">
+                College : <%= i.college %>
+              </p>
+              <p class="address">
+                Address : <%= i.address %>
+              </p>
+            </div>
+            <% }) %>
+              <% } else { %>
+                <p class="no-user">
+                  Please add the user.
+                </p>
+                <% } %>
+        </div>
+  </body>
+
+</html>

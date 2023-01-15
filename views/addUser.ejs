@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+      <form class="add-user-form" action="/user" method="POST">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" required>
+        </div>
+
+        <div>
+          <label for="college">College</label>
+          <input type="text" name="college" required>
+        </div>
+
+        <div>
+          <label for="address">Address</label>
+          <input type="text" name="address" required>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+  </body>
+
+</html>

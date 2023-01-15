@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+      <div class="user-list-item">
+        <p class="name">
+          Name : <%= user.name %>
+        </p>
+        <p class="college">
+          College : <%= user.college %>
+        </p>
+        <p class="address">
+          Address : <%= user.address %>
+        </p>
+      </div>
+      <form action="/user/<%- user.id %>" method="POST">
+        <button class="btn-del" type="submit">
+          DELETE
+        </button>
+      </form>
+  </body>
+
+</html>
